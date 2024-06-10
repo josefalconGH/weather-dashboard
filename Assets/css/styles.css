@@ -5,6 +5,14 @@
 /* root storage */
 :root {
     /* color variables */
+    --primary-clr: #1c2450;
+    --secondary-clr: #2f3d8a;
+    --tertiary-clr: #9c9de3;
+
+    --aside-background-clr: #dbdbdb;
+    --aside-border-clr: #a1a1a1;
+    --aside-text-clr: #1c2450;
+
     --btn-background-clr: #1c1d63;
     --btn-border-clr: #1c2450;
     --btn-text-clr: #9c9de3;
@@ -17,6 +25,35 @@
 /* element selectors */
 
 /* class selectors */
+    /* custom header styling */
+    .custom-header {
+        /* gradient top to bottom */
+        background: linear-gradient(to bottom, var(--secondary-clr), var(--primary-clr));
+    }
+
+    /* custom header text styling */
+    .custom-header-text {
+        /* font styling */
+        color: var(--tertiary-clr);
+        font-weight: 600; /* bold */
+        
+        /* margin styling */
+        margin-top: 0.25rem;
+        margin-bottom: 0.5rem;
+    }
+
+    /* custom aside styling */
+    .custom-aside {
+        background-color: var(--aside-background-clr);
+        border: solid 1px var(--aside-border-clr);
+    }
+
+    /* custom aside header styling */
+    .custom-aside-header {
+        color: var(--aside-text-clr);
+        font-weight: 500; /* bold */
+    }
+
     /* custom button styling */
     .custom-button {
         background-color: var(--btn-background-clr);
@@ -36,9 +73,8 @@
         color: var(--btn-hover-text-clr);
     }
 
-    /* custom button active styling */
+    /* custom button focus styling */
     .custom-button:focus {
-        /* use the --btn-hover-border-color for the box-shadow but at 35% opacity  */
         box-shadow: 0 0 0 3px rgba(28, 36, 80, 0.35);
         
         /* font styling */
