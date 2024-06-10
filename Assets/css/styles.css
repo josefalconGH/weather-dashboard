@@ -1,0 +1,49 @@
+* {
+
+}
+
+/* root storage */
+:root {
+    /* color variables */
+    --btn-background-clr: #1c1d63;
+    --btn-border-clr: #1c2450;
+    --btn-text-clr: #9c9de3;
+
+    --btn-hover-background-clr: #9c9de3;
+    --btn-hover-border-clr: #1c2450;
+    --btn-hover-text-clr: #1c1d63;
+}
+
+/* element selectors */
+
+/* class selectors */
+    /* custom button styling */
+    .custom-button {
+        background-color: var(--btn-background-clr);
+        border: solid 1px var(--btn-border-clr);
+
+        /* font styling */
+        color: var(--btn-text-clr);
+        font-weight: 600; /* bold */
+    }
+
+    /* custom button hover styling */
+    .custom-button:hover {
+        background-color: var(--btn-hover-background-clr);
+        border: solid 1px var(--btn-hover-border-clr);
+
+        /* font styling */
+        color: var(--btn-hover-text-clr);
+    }
+
+    /* custom button active styling */
+    .custom-button:focus {
+        /* use the --btn-hover-border-color for the box-shadow but at 35% opacity  */
+        box-shadow: 0 0 0 3px rgba(28, 36, 80, 0.35);
+        
+        /* font styling */
+        color: var(--btn-hover-text-clr);
+    }
+
+    
+/* id selectors */
