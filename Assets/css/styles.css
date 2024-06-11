@@ -5,9 +5,9 @@
 /* root storage */
 :root {
     /* color variables */
-    --primary-clr: #1c2450;
-    --secondary-clr: #2f3d8a;
-    --tertiary-clr: #9c9de3;
+    --primary-clr: #131d53;
+    --secondary-clr: #38458f;
+    --tertiary-clr: #b3b4e7;
 
     --aside-background-clr: #dbdbdb;
     --aside-border-clr: #a1a1a1;
@@ -15,9 +15,9 @@
 
     --btn-background-clr: #1c1d63;
     --btn-border-clr: #1c2450;
-    --btn-text-clr: #9c9de3;
+    --btn-text-clr: #b3b4e7;
 
-    --btn-hover-background-clr: #9c9de3;
+    --btn-hover-background-clr: #b3b4e7;
     --btn-hover-border-clr: #1c2450;
     --btn-hover-text-clr: #1c1d63;
 }

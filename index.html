@@ -19,19 +19,31 @@
         <h1 class="custom-header-text">Weather Dashboard</h1>
     </header>
 
-    <!-- aside section -->
-     <aside class="custom-aside col-12 px-3">
-        <!-- form to search city for weather -->
-        <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search for a city" aria-label="Search">
-            <button class="btn custom-button col-12 my-2" type="submit">Search</button>
-        </form>
-     </aside>
+    <main>
+        <!-- aside section -->
+        <aside class="custom-aside col-12 px-3">
+            <!-- form to search city for weather -->
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search for a city" aria-label="Search">
+                <button class="btn custom-button col-12 my-2" type="submit">Search</button>
+            </form>
 
-    <!-- main location results section -->
+            <!-- list of cities searched for -->
+            <ul id="common-search-history"></ul>
+        </aside>
 
-    <!-- 5 day forecast section -->
+        <!-- main location results section -->
+        <section id="weather-outlook" class="">
+            <!-- current weather -->
+             <section id="weather-current" class="">
+             </section>
 
+            <!-- 5 day forecast -->
+            <ul id="weather-forecast" class=""> 
+            </ul>
+        </section>
+
+    </main>
 
     <!-- link to bootstrap js cdn -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
